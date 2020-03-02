@@ -14,9 +14,10 @@ def escape_spaces_2(string):
   while j != i:
     # Replace space with %20
     if letters[i] == " ":
-      letters[j-2] = "%"
-      letters[j-1] = "2"
-      letters[j]   = "0"
+      #letters[j-2] = "%"
+      #letters[j-1] = "2"
+      #letters[j]   = "0"
+      letters[j-2:j+1] = '%20' #ZT
       j -= 2
     # Copy the original character
     else:
